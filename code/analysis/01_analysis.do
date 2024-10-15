@@ -78,7 +78,7 @@ sum ror_gap
 
 hist ror_gap, ///
 	color(sea%40) ///
-	title("ROR Black-White Disparities") ///
+	title("New Better Title") ///
 	xtitle("ROR Disparity (Black-White)") ///
 	ylabel(0(2)10, nogrid) ///
 	xlabel(-0.3(0.1)0.2, nogrid) ///
