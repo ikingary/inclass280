@@ -87,6 +87,15 @@ hist ror_gap, ///
 	
 gr export ./output/ror_disparity.pdf, replace 
 
+sort ror_gap
+gen index = _n
+gen ub = ror_gap + 1.96*se_ror_gap
+gen lb = ror_gap - 1.96*se_ror_gap
+
+twoway scatter ror_gap index, /// 
+	|| rcap ub lb index, ///
+	legend(off) ///
+	xtitle(off)
 
 
 
